@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LavaMaterial
+  m_Shader: {fileID: 4800000, guid: d2ff47f2945034441a7f6337ba8b71ec, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OutlineTolerance: 0
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Threshold: 0.412
+    - _Threshold2: 0.506
+    - _Threshold3: 0.71
+    - _Tolerance: 0.0391
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Ball0: {r: 1.92, g: 1, b: 0.022691369, a: 0}
+    - _Ball1: {r: 0.61800003, g: 1, b: 0.02216522, a: 0}
+    - _Ball2: {r: -0.51, g: 1, b: 0.02234509, a: 0}
+    - _Ball3: {r: 1.15, g: 1, b: 0.022365615, a: 0}
+    - _Ball4: {r: 0.834, g: 0, b: 0.019564109, a: 0}
+    - _Ball5: {r: -0.00999999, g: 1, b: 0.022225797, a: 0}
+    - _Ball6: {r: 0.5, g: 0.25611776, b: 0.023659168, a: 0}
+    - _Ball7: {r: 0.26, g: 1, b: 0.022504311, a: 0}
+    - _Ball8: {r: 0, g: 0, b: 0, a: 0}
+    - _Ball9: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.7706003, g: 0, b: 1, a: 1}
+    - _Color2: {r: 0.50019825, g: 0.13333334, b: 0.90588236, a: 1}
+    - _Color3: {r: 0.3724141, g: 0, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
