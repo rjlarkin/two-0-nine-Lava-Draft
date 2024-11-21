@@ -19,6 +19,8 @@ public class ColorControl : MonoBehaviour
     private float transitionProgress = 0f;
     private bool isTransitioning = false;
 
+    private int lastGateValue = -1;
+
     void Start()
     {
         // Set random initial colors and properties for the start of the game
@@ -34,10 +36,7 @@ public class ColorControl : MonoBehaviour
             isTransitioning = true;
             transitionProgress = 0f;
 
-            OscMessage message = new OscMessage();
-            message.address = address_Gate;
-            message.values.Add(0);
-            osc.Send(message);
+            UpdateGateValue(); 
         }
 
         if (isTransitioning)
@@ -47,7 +46,13 @@ public class ColorControl : MonoBehaviour
             {
                 transitionProgress = 1f;
                 isTransitioning = false;
+
+                UpdateGateValue(); // Continuously check and send correct value
             }
+           
+
+            Debug.Log($"Transition Progress: {transitionProgress}, Sending: {(isTransitioning ? 0 : 1)}");
+
 
             // Interpolate between current and target properties
 
@@ -75,11 +80,6 @@ public class ColorControl : MonoBehaviour
 
             float outlineToleranceValue = Mathf.Lerp(currentThreshold3, targetThreshold3, transitionProgress);
             lavaMaterial.SetFloat("_OutlineTolerance", outlineToleranceValue);
-
-            OscMessage message = new OscMessage();
-            message.address = address_Gate;
-            message.values.Add(1);
-            osc.Send(message);
 
             OscMessage message1 = new OscMessage();
             message1.address = address_Threshold;
@@ -176,6 +176,31 @@ public class ColorControl : MonoBehaviour
         if (targetThreshold > targetThreshold2)
         {
             (targetThreshold, targetThreshold2) = (targetThreshold2, targetThreshold);
+        }
+    }
+
+    private void UpdateGateValue()
+    {
+        if (transitionProgress < 1.0f) // If transition is not complete
+        {
+            SendGateValue(0); // Ensure "0" is sent during transition
+        }
+        else
+        {
+            SendGateValue(1); // Send "1" only when transition completes
+        }
+    }
+
+    void SendGateValue(int value)
+    {
+        if (lastGateValue != value) // Only send if the value has changed
+        {
+            OscMessage message = new OscMessage();
+            message.address = address_Gate;
+            message.values.Add(value);
+            osc.Send(message);
+            lastGateValue = value; // Update the last sent value
+            Debug.Log($"Sent to {address_Gate}: {value}");
         }
     }
 }
