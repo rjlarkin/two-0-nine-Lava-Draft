@@ -352,10 +352,14 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.49f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.49f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/Archived/Blob1.cs"
+"Assets/Scripts/Archived/LampSurfaceMultiColor.cs"
 "Assets/Scripts/Blob.cs"
-"Assets/Scripts/Blob1.cs"
+"Assets/Scripts/BlobManager.cs"
+"Assets/Scripts/ColorControl.cs"
 "Assets/Scripts/LampSurface.cs"
-"Assets/Scripts/LampSurfaceMultiColor.cs"
+"Assets/Scripts/OSC.cs"
+"Assets/Scripts/OSCController.cs"
 -langversion:9.0
 /deterministic
 /optimize+

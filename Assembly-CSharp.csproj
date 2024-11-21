@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E564732C-E3E4-19BE-7A06-D1B5BAAC9EAE}</ProjectGuid>
+    <ProjectGuid>{BA1AD47F-5AC3-FE0F-3B9C-C5917B6F2495}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,14 +60,18 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.49f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/LampSurfaceMultiColor.cs" />
-    <Compile Include="Assets/Scripts/Blob1.cs" />
+    <Compile Include="Assets/Scripts/BlobManager.cs" />
+    <Compile Include="Assets/Scripts/Archived/Blob1.cs" />
+    <Compile Include="Assets/Scripts/ColorControl.cs" />
+    <Compile Include="Assets/Scripts/OSC.cs" />
+    <Compile Include="Assets/Scripts/Archived/LampSurfaceMultiColor.cs" />
     <Compile Include="Assets/Scripts/LampSurface.cs" />
+    <Compile Include="Assets/Scripts/OSCController.cs" />
     <Compile Include="Assets/Scripts/Blob.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Shaders/LavaShader.shader" />
-    <None Include="Assets/Shaders/CustomMultiBallShader.shader" />
+    <None Include="Assets/Shaders/Archived/CustomMultiBallShader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -71,31 +71,31 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineTolerance: 0
+    - _OutlineTolerance: 0.68236923
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Threshold: 0.412
-    - _Threshold2: 0.506
-    - _Threshold3: 0.71
+    - _Threshold: 0.5337678
+    - _Threshold2: 0.56595445
+    - _Threshold3: 0.68236923
     - _Tolerance: 0.0391
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Ball0: {r: 1.92, g: 1, b: 0.022691369, a: 0}
-    - _Ball1: {r: 0.61800003, g: 1, b: 0.02216522, a: 0}
-    - _Ball2: {r: -0.51, g: 1, b: 0.02234509, a: 0}
-    - _Ball3: {r: 1.15, g: 1, b: 0.022365615, a: 0}
-    - _Ball4: {r: 0.834, g: 0, b: 0.019564109, a: 0}
-    - _Ball5: {r: -0.00999999, g: 1, b: 0.022225797, a: 0}
-    - _Ball6: {r: 0.5, g: 0.25611776, b: 0.023659168, a: 0}
-    - _Ball7: {r: 0.26, g: 1, b: 0.022504311, a: 0}
+    - _Ball0: {r: 0.030000001, g: 0.28745753, b: 0.031815007, a: 0}
+    - _Ball1: {r: 0.17199999, g: 1, b: 0.026413193, a: 0}
+    - _Ball2: {r: 0.32999998, g: 0, b: 0.01935458, a: 0}
+    - _Ball3: {r: 0.42000002, g: 1, b: 0.026169972, a: 0}
+    - _Ball4: {r: 0.53, g: 0, b: 0.019473122, a: 0}
+    - _Ball5: {r: 0.7, g: 0.30741686, b: 0.016866088, a: 0}
+    - _Ball6: {r: 0.83000004, g: 0.28878844, b: 0.015791906, a: 0}
+    - _Ball7: {r: 0.923, g: 1, b: 0.025946464, a: 0}
     - _Ball8: {r: 0, g: 0, b: 0, a: 0}
     - _Ball9: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.7706003, g: 0, b: 1, a: 1}
-    - _Color2: {r: 0.50019825, g: 0.13333334, b: 0.90588236, a: 1}
-    - _Color3: {r: 0.3724141, g: 0, b: 1, a: 1}
+    - _Color: {r: 0.5117825, g: 0.2097775, b: 0.80838794, a: 1}
+    - _Color2: {r: 0.54719955, g: 0.85534185, b: 0.9863996, a: 1}
+    - _Color3: {r: 0.82510084, g: 0.69664204, b: 0.5479501, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

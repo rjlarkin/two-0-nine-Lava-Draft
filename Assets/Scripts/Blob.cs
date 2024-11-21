@@ -22,7 +22,14 @@ public class Blob : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        // Randomize parameters for initial variability
+        gravity += Random.Range(-0.05f, 0.05f);
+        maxYSpeed += Random.Range(-0.5f, 0.5f);
+        heatSourceIntensity += Random.Range(-0.3f, 0.3f);
+        passiveCoolingRate += Random.Range(-0.2f, 0.2f);
+        temperatureForce += Random.Range(-0.005f, 0.005f);
+        temperatureMinScale += Random.Range(-0.05f, 0.05f);
+        temperatureMaxScale += Random.Range(-0.1f, 0.1f);
     }
 
     private void FixedUpdate()
