@@ -8,6 +8,7 @@ public class ColorControl : MonoBehaviour
     public string address_Threshold2;
     public string address_Threshold3;
     public string address_Outline;
+    public string randomize;
 
     public Material lavaMaterial; // Assign the shader material in the Unity Editor
     public float transitionDuration = 5f; // Duration for transitions
@@ -26,19 +27,12 @@ public class ColorControl : MonoBehaviour
         // Set random initial colors and properties for the start of the game
         SetInitialProperties();
         //osc.SetAddressHandler(address_Outline, OnOutlineToleranceSent);
+
+        osc.SetAddressHandler(randomize, OnReceiveRandomizeOSC);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // Press space to start a new transition
-        {
-            SetNewTargetProperties();
-            isTransitioning = true;
-            transitionProgress = 0f;
-
-            UpdateGateValue(); 
-        }
-
         if (isTransitioning)
         {
             transitionProgress += Time.deltaTime / transitionDuration;
@@ -55,15 +49,6 @@ public class ColorControl : MonoBehaviour
 
 
             // Interpolate between current and target properties
-
-            //lavaMaterial.SetColor("_Color", Color.Lerp(currentColor1, targetColor1, transitionProgress));
-            //lavaMaterial.SetColor("_Color2", Color.Lerp(currentColor2, targetColor2, transitionProgress));
-            //lavaMaterial.SetColor("_Color3", Color.Lerp(currentColor3, targetColor3, transitionProgress));
-            //lavaMaterial.SetFloat("_Threshold", Mathf.Lerp(currentThreshold, targetThreshold, transitionProgress));
-            //lavaMaterial.SetFloat("_Threshold2", Mathf.Lerp(currentThreshold2, targetThreshold2, transitionProgress));
-            //lavaMaterial.SetFloat("_Threshold3", Mathf.Lerp(currentThreshold3, targetThreshold3, transitionProgress));
-            //lavaMaterial.SetFloat("_OutlineTolerance", Mathf.Lerp(currentOutlineTolerance, targetOutlineTolerance, transitionProgress));
-
             lavaMaterial.SetColor("_Color", Color.Lerp(currentColor1, targetColor1, transitionProgress));
             lavaMaterial.SetColor("_Color2", Color.Lerp(currentColor2, targetColor2, transitionProgress));
             lavaMaterial.SetColor("_Color3", Color.Lerp(currentColor3, targetColor3, transitionProgress));
@@ -78,7 +63,7 @@ public class ColorControl : MonoBehaviour
             float threshold3Value = Mathf.Lerp(currentThreshold3, targetThreshold3, transitionProgress);
             lavaMaterial.SetFloat("_Threshold3", threshold3Value);
 
-            float outlineToleranceValue = Mathf.Lerp(currentThreshold3, targetThreshold3, transitionProgress);
+            float outlineToleranceValue = Mathf.Lerp(currentOutlineTolerance, targetOutlineTolerance, transitionProgress);
             lavaMaterial.SetFloat("_OutlineTolerance", outlineToleranceValue);
 
             OscMessage message1 = new OscMessage();
@@ -202,5 +187,14 @@ public class ColorControl : MonoBehaviour
             lastGateValue = value; // Update the last sent value
             Debug.Log($"Sent to {address_Gate}: {value}");
         }
+    }
+
+    void OnReceiveRandomizeOSC (OscMessage message)
+    {
+        SetNewTargetProperties();
+        isTransitioning = true;
+        transitionProgress = 0f;
+
+        UpdateGateValue();
     }
 }

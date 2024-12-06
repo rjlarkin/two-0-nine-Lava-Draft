@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Blob : MonoBehaviour
 {
+    public OSC osc;
+    public string destroy_Blobs;
+
     public float gravity = 0.1f;
     public float maxYSpeed = 1f;
 
@@ -22,6 +25,8 @@ public class Blob : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //osc.SetAddressHandler(destroy_Blobs, OnDestroyMessageReceived);
+
         // Randomize parameters for initial variability
         gravity += Random.Range(-0.05f, 0.05f);
         maxYSpeed += Random.Range(-0.5f, 0.5f);
@@ -76,4 +81,9 @@ public class Blob : MonoBehaviour
             }
         }
     }
+
+    /*void OnDestroyMessageReceived(OscMessage message)
+    {
+        Destroy(gameObject);
+    }*/
 }
