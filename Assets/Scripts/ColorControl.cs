@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ColorControl : MonoBehaviour
 {
+    //This script SENDS osc values
+
     public OSC osc;
     public string address_Gate;
     public string address_Threshold;

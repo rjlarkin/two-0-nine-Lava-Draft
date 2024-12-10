@@ -355,6 +355,7 @@
 "Assets/Scripts/Archived/Blob1.cs"
 "Assets/Scripts/Archived/BlobManager.cs"
 "Assets/Scripts/Archived/LampSurfaceMultiColor.cs"
+"Assets/Scripts/BlackoutController.cs"
 "Assets/Scripts/Blob.cs"
 "Assets/Scripts/ColorControl.cs"
 "Assets/Scripts/LampSurface.cs"

@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{BA1AD47F-5AC3-FE0F-3B9C-C5917B6F2495}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Blob.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BlackoutController.cs">
     <Files>
-      <File FileName="Assets/Scripts/ColorControl.cs" Line="33" Column="1" />
+      <File FileName="Assets/Scripts/BlackoutController.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/OSCController.cs" Line="33" Column="49" />
+      <File FileName="Assets/Scripts/ColorControl.cs" Line="5" Column="35" />
       <File FileName="Assets/Shaders/LavaShader.shader" />
-      <File FileName="Assets/Scripts/Blob.cs" Line="88" Column="8" />
-      <File FileName="Assets/Scripts/OSCController.cs" Line="31" Column="5" />
-      <File FileName="Assets/Scripts/LampSurface.cs" Line="42" Column="9" />
+      <File FileName="Assets/Scripts/Blob.cs" />
+      <File FileName="Assets/Scripts/LampSurface.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +14,7 @@
           <Node name="two-0-nine-Lava-Draft" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Blob.cs" selected="True" />
+                <Node name="BlackoutController.cs" selected="True" />
               </Node>
               <Node name="Shaders" expanded="True" />
             </Node>
@@ -24,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7c066b81-4161-49c2-acad-e85e61fe7159" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6af0e601-3dd3-473b-b436-a7cf027dba6c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

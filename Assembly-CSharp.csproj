@@ -67,6 +67,7 @@
     <Compile Include="Assets/Scripts/Archived/LampSurfaceMultiColor.cs" />
     <Compile Include="Assets/Scripts/LampSurface.cs" />
     <Compile Include="Assets/Scripts/OSCController.cs" />
+    <Compile Include="Assets/Scripts/BlackoutController.cs" />
     <Compile Include="Assets/Scripts/Blob.cs" />
   </ItemGroup>
   <ItemGroup>

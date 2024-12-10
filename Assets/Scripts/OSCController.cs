@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OSCController : MonoBehaviour
 {
+    //This script RECEIVES osc values 
+
     public OSC osc;
     public string address_Threshold;
     public string address_Threshold2;

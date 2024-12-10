@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 459.0, 140.0, 869.0, 760.0 ],
+		"rect" : [ 378.0, 250.0, 869.0, 562.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,26 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-116",
-					"linecount" : 4,
+					"id" : "obj-66",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1148.0, 811.0, 316.0, 60.0 ],
-					"text" : "Still determining how to trigger BLACKOUT for ending...\n\nEither 1) Destroy the Blobs on cue or 2) Enable a black screen on cue"
+					"patching_rect" : [ 1325.0, 921.0, 24.0, 20.0 ],
+					"text" : "Q"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1357.0, 920.0, 46.0, 22.0 ],
+					"text" : "sel 113"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1239.0, 843.0, 69.0, 20.0 ],
+					"text" : "Blackout"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-190",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1230.0, 1050.0, 82.0, 35.0 ],
-					"text" : "/DestroyBlobs 0"
+					"patching_rect" : [ 1230.0, 1050.0, 82.0, 22.0 ],
+					"text" : "/Blackout 0"
 				}
 
 			}
@@ -94,8 +115,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1239.0, 977.0, 83.0, 22.0 ],
-					"text" : "/DestroyBlobs"
+					"patching_rect" : [ 1239.0, 977.0, 58.0, 22.0 ],
+					"text" : "/Blackout"
 				}
 
 			}
@@ -801,7 +822,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 753.0, 772.0, 69.0, 35.0 ],
-					"text" : "/Outline 0.076441"
+					"text" : "/Outline 0.069738"
 				}
 
 			}
@@ -877,7 +898,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 523.0, 772.0, 79.0, 35.0 ],
-					"text" : "/Threshold3 0.725973"
+					"text" : "/Threshold3 0.673766"
 				}
 
 			}
@@ -954,7 +975,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 323.0, 772.0, 79.0, 35.0 ],
-					"text" : "/Threshold2 0.340576"
+					"text" : "/Threshold2 0.502078"
 				}
 
 			}
@@ -1031,7 +1052,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 236.5, 772.0, 69.0, 35.0 ],
-					"text" : "/Threshold 0.225405"
+					"text" : "/Threshold 0.359622"
 				}
 
 			}
@@ -2106,7 +2127,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 0 ],
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"order" : 0,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -2114,7 +2143,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -2130,6 +2159,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-192", 0 ],
+					"order" : 1,
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-193", 0 ],
+					"order" : 0,
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
