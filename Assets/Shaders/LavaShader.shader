@@ -34,7 +34,9 @@
 	}
 		SubShader //rendering settings
 		{
-			Tags {"Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent"}
+			//Tags {"Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent"}
+			Tags {"Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Opaque"}
+			Cull Front
 			LOD 100
 
 			ZWrite Off //Disables writing to the depth buffer (useful for transparent objects).
